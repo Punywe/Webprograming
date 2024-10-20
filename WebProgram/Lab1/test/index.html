@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Input LINE Token</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column; /* จัดเรียงในแนวตั้ง */
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* ใช้ความสูงของ viewport */
+            margin: 0;
+            text-align: center; /* จัดให้อยู่กลางในแนวนอน */
+            background-color: #f0f0f0; /* สีพื้นหลัง */
+        }
+
+        h1 {
+            margin-bottom: 20px; /* ระยะห่างระหว่างหัวและฟอร์ม */
+        }
+
+        form {
+            width: 300px; /* กำหนดความกว้างของฟอร์ม */
+            padding: 20px; /* เพิ่ม padding */
+            border: 1px solid #ccc; /* ขอบ */
+            border-radius: 8px; /* มุมมน */
+            background-color: #fff; /* สีพื้นหลังของฟอร์ม */
+        }
+
+        input[type="text"] {
+            width: 100%; /* กำหนดให้กว้าง 100% ของฟอร์ม */
+            padding: 10px; /* เพิ่ม padding */
+            margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่าง */
+            border: 1px solid #ccc; /* ขอบ */
+            border-radius: 4px; /* มุมมน */
+        }
+
+        input[type="submit"] {
+            width: 100%; /* กำหนดให้กว้าง 100% ของฟอร์ม */
+            padding: 10px; /* เพิ่ม padding */
+            border: none; /* ไม่มีขอบ */
+            border-radius: 4px; /* มุมมน */
+            background-color: #28a745; /* สีพื้นหลังของปุ่ม */
+            color: white; /* สีข้อความ */
+            cursor: pointer; /* แสดง cursor เป็น pointer */
+        }
+    </style>
+</head>
+<body>
+    <h1>Input LINE Token</h1>
+    <form action="/submitToken" method="POST">
+        <input type="text" name="token" placeholder="Enter your LINE Token" required>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

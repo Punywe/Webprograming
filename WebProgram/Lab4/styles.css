@@ -1,0 +1,95 @@
+/* index */
+/* รีเซ็ตค่าพื้นฐานของเบราว์เซอร์ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* กำหนดสไตล์พื้นฐานของหน้าเว็บ */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url('bck.jpg'); /* ใช้ภาพพื้นหลัง */
+    background-size: cover; /* ทำให้ภาพครอบคลุมพื้นที่ทั้งหมด */
+    background-position: center; /* วางภาพตรงกลาง */
+    background-repeat: no-repeat; /* ป้องกันการทำซ้ำของภาพ */
+    color: #333;
+    padding: 20px;
+}
+
+/* ส่วนหัว */
+header {
+    background-color: #313331d7;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* เมนูนำทาง */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none; /* เอาขีดเส้นใต้ของลิงก์ออก */
+    color: white; /* กำหนดสีเริ่มต้นของลิงก์เป็นสีขาว */
+    font-weight: normal; /* กำหนดความหนาของตัวอักษรเป็นปกติ */
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(226, 223, 17);
+    font-weight: bold;
+}
+
+/* ส่วนเนื้อหาหลัก */
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* ส่วนท้าย */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* CSS About me--------------------------*/
+#myImage {
+    position: absolute; /* ใช้ position: absolute เพื่อวางตำแหน่งที่เฉพาะ */
+    top: 160px; /* ระยะห่างจากด้านบน */
+    right: 30px; /* ระยะห่างจากด้านขวา */
+    width: 200px; /* กำหนดขนาดความกว้างของรูปภาพ */
+    height: auto; /* ให้สูงตามอัตราส่วนของรูปภาพ */
+    background-color: rgb(5, 5, 5); /* สีพื้นหลัง */
+    border: 5px solid #000; /* กำหนดกรอบ: 5px ความหนา, solid รูปแบบของกรอบ, #000 สีของกรอบ */
+    border-radius: 10px; /* ทำให้มุมของกรอบเป็นโค้งมน (ตามต้องการ) */
+}
+
+/* ตกแต่งข้อความ */
+main h2 {
+    font-size: 2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+p1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

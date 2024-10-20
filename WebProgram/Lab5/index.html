@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+
+</head>
+<body>
+    <header>Personal Information</header>
+    <div id="form-container">
+        <form id="info-form">
+            <label for="first-name">First name:</label>
+            <input type="text" id="first-name" name="first-name" required><br><br>
+            
+            <label for="last-name">Last name:</label>
+            <input type="text" id="last-name" name="last-name" required><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="num" name="num" value="0" min="0" max="100" required><br><br>
+            
+            <label for="cl">Favorite color:</label>
+            <input type="color" id="cl" name="cl" required><br><br>
+
+            <label for="image">Profile picture upload:</label>
+            <input type="file" id="image" name="image" accept="image/*" required><br><br>
+            
+            <div class="gender-section">
+                <label>Gender:</label>
+                <label class="radio-label">
+                    <input type="radio" id="male" name="gender" value="male" required> Male
+                </label>
+                <label class="radio-label">
+                    <input type="radio" id="female" name="gender" value="female"> Female
+                </label>
+            </div><br><br>
+            
+            <label for="province">Province:</label>
+            <select id="province" name="province" required>
+                <option value="" disabled selected>Select your province</option>
+                <option value="bangkok">Bangkok</option>
+                <option value="chiangmai">Chiang Mai</option>
+                <option value="phuket">Phuket</option>
+                <option value="khonkaen">Khon Kaen</option>
+            </select><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>

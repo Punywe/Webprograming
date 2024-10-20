@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab Form</title>
+    <style>
+        /* สไตล์สำหรับตาราง */
+        table {
+            border-collapse: collapse; /* ลบเส้นช่องว่างระหว่างขอบตาราง */
+            width: 100%; /* กำหนดความกว้างตารางให้เต็ม 100% ของคอนเทนเนอร์ */
+            max-width: 500px; /* กำหนดความกว้างสูงสุด */
+            margin: 20px auto; /* จัดตารางให้อยู่กึ่งกลางและมีระยะห่าง */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ใส่เงาให้ตาราง */
+            border-radius: 5px; /* ทำขอบตารางโค้งมน */
+            overflow: hidden; /* ซ่อนส่วนที่เกินออกมาจากมุมตาราง */
+        }
+
+        th, td {
+            padding: 15px; /* ใส่พื้นที่ว่างในเซลล์ */
+            text-align: center; /* จัดข้อความให้อยู่กลาง */
+            background-color: #f8f8f8; /* พื้นหลังสีเทาอ่อน */
+        }
+
+        th {
+            background-color: #4CAF50; /* สีพื้นหลังของส่วนหัวตาราง */
+            color: white; /* สีของตัวอักษรส่วนหัวตาราง */
+            font-weight: bold; /* ทำให้ตัวอักษรหนาขึ้น */
+        }
+
+        td textarea {
+            width: 90%; /* กำหนดความกว้างของ textarea */
+            height: 150px; /* กำหนดความสูงของ textarea */
+            border: 1px solid #ccc; /* ขอบของ textarea */
+            border-radius: 3px; /* ทำขอบ textarea ให้โค้งมน */
+            padding: 10px; /* ใส่ระยะห่างภายใน textarea */
+            resize: none; /* ป้องกันการยืดขยายของ textarea */
+        }
+    </style>
+
+</head>
+<body bgcolor="#f7daff ">
+    <form method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="Fname" placeholder="Enter your first name" required><br><br>
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="Lname" placeholder="Enter your last name" required><br><br>
+
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" placeholder="Enter your password" required><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label for="num">Age:</label>
+            <input type="number" id="num" name="num" value="0" min="0" max="100" required><br><br>
+
+            <label for="province">Province:</label>
+            <select id="province" name="province" required>
+                <option value="" disabled selected>Select your province</option>
+                <option value="bangkok">Bangkok</option>
+                <option value="chiangmai">Chiang Mai</option>
+                <option value="phuket">Phuket</option>
+                <option value="khonkaen">Khon Kaen</option>
+                <!-- สามารถเพิ่มจังหวัดอื่นๆ ได้ตามต้องการ -->
+            </select><br><br>
+
+            <label>Favorite color</label>
+            <input type="color" id="cl" name="cl" required><br><br>
+
+            <label for="image">Profile picture upload:</label>
+            <input type="file" id="image" name="image" accept="image/*" required><br><br>
+
+            <input type="hidden" id="userId" name="userId" value="12345">
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form> 
+    <br><br>
+    <table border="1" width="500">
+        <thead>
+            <tr>
+                <th>Information about introduce your self</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><textarea placeholder="Introduce your self here" rows="10" cols="100"></textarea></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    
+</body>
+</html>
